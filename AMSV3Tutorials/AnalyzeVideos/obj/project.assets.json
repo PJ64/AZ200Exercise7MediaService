@@ -5484,11 +5484,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Courses\\AZ200\\Exercise7\\AZ200Exercise7\\AMSV3Tutorials\\AnalyzeVideos\\AnalyzeVideos.csproj",
+      "projectUniqueName": "F:\\Courses\\AZ200\\Exercise7\\AZ200Exercise7MediaService\\AMSV3Tutorials\\AnalyzeVideos\\AnalyzeVideos.csproj",
       "projectName": "AnalyzeVideos",
-      "projectPath": "F:\\Courses\\AZ200\\Exercise7\\AZ200Exercise7\\AMSV3Tutorials\\AnalyzeVideos\\AnalyzeVideos.csproj",
+      "projectPath": "F:\\Courses\\AZ200\\Exercise7\\AZ200Exercise7MediaService\\AMSV3Tutorials\\AnalyzeVideos\\AnalyzeVideos.csproj",
       "packagesPath": "C:\\Users\\Paul\\.nuget\\packages\\",
-      "outputPath": "F:\\Courses\\AZ200\\Exercise7\\AZ200Exercise7\\AMSV3Tutorials\\AnalyzeVideos\\obj\\",
+      "outputPath": "F:\\Courses\\AZ200\\Exercise7\\AZ200Exercise7MediaService\\AMSV3Tutorials\\AnalyzeVideos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

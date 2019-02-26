@@ -5798,11 +5798,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Courses\\AZ200\\Exercise7\\AZ200Exercise7\\AMSV3Tutorials\\EncryptWithAES\\EncryptWithAES.csproj",
+      "projectUniqueName": "F:\\Courses\\AZ200\\Exercise7\\AZ200Exercise7MediaService\\AMSV3Tutorials\\EncryptWithAES\\EncryptWithAES.csproj",
       "projectName": "EncryptWithAES",
-      "projectPath": "F:\\Courses\\AZ200\\Exercise7\\AZ200Exercise7\\AMSV3Tutorials\\EncryptWithAES\\EncryptWithAES.csproj",
+      "projectPath": "F:\\Courses\\AZ200\\Exercise7\\AZ200Exercise7MediaService\\AMSV3Tutorials\\EncryptWithAES\\EncryptWithAES.csproj",
       "packagesPath": "C:\\Users\\Paul\\.nuget\\packages\\",
-      "outputPath": "F:\\Courses\\AZ200\\Exercise7\\AZ200Exercise7\\AMSV3Tutorials\\EncryptWithAES\\obj\\",
+      "outputPath": "F:\\Courses\\AZ200\\Exercise7\\AZ200Exercise7MediaService\\AMSV3Tutorials\\EncryptWithAES\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

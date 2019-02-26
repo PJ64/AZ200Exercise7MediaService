@@ -157,47 +157,7 @@ namespace UploadEncodeAndStreamFiles
         /// <param name="fileToUpload">The file you want to upload into the asset.</param>
         /// <returns></returns>
         // <CreateInputAsset>
-        private static async Task<Asset> CreateInputAssetAsync(
-            IAzureMediaServicesClient client,
-            string resourceGroupName,
-            string accountName,
-            string assetName,
-            string fileToUpload)
-        {
-            // In this example, we are assuming that the asset name is unique.
-            //
-            // If you already have an asset with the desired name, use the Assets.Get method
-            // to get the existing asset. In Media Services v3, the Get method on entities returns null 
-            // if the entity doesn't exist (a case-insensitive check on the name).
-
-            // Call Media Services API to create an Asset.
-            // This method creates a container in storage for the Asset.
-            // The files (blobs) associated with the asset will be stored in this container.
-            Asset asset = await client.Assets.CreateOrUpdateAsync(resourceGroupName, accountName, assetName, new Asset());
-
-            // Use Media Services API to get back a response that contains
-            // SAS URL for the Asset container into which to upload blobs.
-            // That is where you would specify read-write permissions 
-            // and the exparation time for the SAS URL.
-            var response = await client.Assets.ListContainerSasAsync(
-                resourceGroupName,
-                accountName,
-                assetName,
-                permissions: AssetContainerPermission.ReadWrite,
-                expiryTime: DateTime.UtcNow.AddHours(4).ToUniversalTime());
-
-            var sasUri = new Uri(response.AssetContainerSasUrls.First());
-
-            // Use Storage API to get a reference to the Asset container
-            // that was created by calling Asset's CreateOrUpdate method.  
-            CloudBlobContainer container = new CloudBlobContainer(sasUri);
-            var blob = container.GetBlockBlobReference(Path.GetFileName(fileToUpload));
-
-            // Use Strorage API to upload the file into the container in storage.
-            await blob.UploadFromFileAsync(fileToUpload);
-
-            return asset;
-        }
+        
         // </CreateInputAsset>
 
         /// <summary>
@@ -357,25 +317,7 @@ namespace UploadEncodeAndStreamFiles
         /// <param name="accountName"></param>
         /// <param name="transformName"></param>
         // <CleanUp>
-        private static async Task CleanUpAsync(
-            IAzureMediaServicesClient client,
-            string resourceGroupName,
-            string accountName,
-            string transformName)
-        {
 
-            var jobs = await client.Jobs.ListAsync(resourceGroupName, accountName, transformName);
-            foreach (var job in jobs)
-            {
-                await client.Jobs.DeleteAsync(resourceGroupName, accountName, transformName, job.Name);
-            }
-
-            var assets = await client.Assets.ListAsync(resourceGroupName, accountName);
-            foreach (var asset in assets)
-            {
-                await client.Assets.DeleteAsync(resourceGroupName, accountName, asset.Name);
-            }
-        }
         // </CleanUp>
     }
 }

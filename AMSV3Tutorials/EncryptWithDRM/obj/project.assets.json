@@ -5798,11 +5798,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Courses\\AZ200\\Exercise7\\AZ200Exercise7\\AMSV3Tutorials\\EncryptWithDRM\\EncryptWithDRM.csproj",
+      "projectUniqueName": "F:\\Courses\\AZ200\\Exercise7\\AZ200Exercise7MediaService\\AMSV3Tutorials\\EncryptWithDRM\\EncryptWithDRM.csproj",
       "projectName": "EncryptWithDRM",
-      "projectPath": "F:\\Courses\\AZ200\\Exercise7\\AZ200Exercise7\\AMSV3Tutorials\\EncryptWithDRM\\EncryptWithDRM.csproj",
+      "projectPath": "F:\\Courses\\AZ200\\Exercise7\\AZ200Exercise7MediaService\\AMSV3Tutorials\\EncryptWithDRM\\EncryptWithDRM.csproj",
       "packagesPath": "C:\\Users\\Paul\\.nuget\\packages\\",
-      "outputPath": "F:\\Courses\\AZ200\\Exercise7\\AZ200Exercise7\\AMSV3Tutorials\\EncryptWithDRM\\obj\\",
+      "outputPath": "F:\\Courses\\AZ200\\Exercise7\\AZ200Exercise7MediaService\\AMSV3Tutorials\\EncryptWithDRM\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
